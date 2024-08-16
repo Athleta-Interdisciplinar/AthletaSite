@@ -1,0 +1,216 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'Athleta';
+    src: url(./fonte/Harabara\ Mais\ Demo.otf) format(opentype);
+}
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    position: absolute; /* Alterar para position absolute para garantir que fique sobre a imagem */
+    top: 0;
+    z-index: 2; /* Garantir que a header fique sobreposta à imagem */
+    font-family: "Athleta";
+    background-color: #F9A400;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+
+img.tpLogo{
+    width: 50px;
+    margin-left: 15px;
+    margin-top: 9px;
+    cursor: pointer;
+    float: left;
+}
+
+div.tpCd{
+    margin-right: 20px;
+    margin-top: 11px;
+    float: right;
+    background-color: white;
+    height: 50px;
+    border-radius: 20px;
+    width: 200px;
+}
+
+div.centrAjuda{
+    margin-right: 20px;
+    margin-top: 15px;
+    float: right;
+    height: 50px;
+    border-radius: 20px;
+    width: 200px;
+    color: white;
+}
+
+h2.centrAjuda{
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+
+a{
+    text-decoration: none; 
+    color: black;
+}
+
+h2.tpCd{
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+img.tenis{
+    width: 100%;
+    top: 0px;
+    vertical-align: top;
+}
+
+
+h2.lg{
+    position: absolute;
+    top: 250px;
+    font-size: 60px;
+    font-family: "Athleta";
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+div.btLogin{
+    background-color: white;
+    position: absolute;
+    top: 550px;
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    text-align: center;
+    display: inline-block;
+    left: 50%;
+}
+
+h2.bt{
+    font-family: "Athleta";
+    margin-top: 10px;
+}
+
+div.btCadastro{
+    background-color: #F9A400;
+    position: absolute;
+    top: 550px;
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    text-align: center;
+    display: inline-block;
+    left: 35%;
+}
+
+/* -------------------------------------- COMUNIDADE ------------------------------------------- */
+
+img.comunidade{
+    width: 40%;
+    margin-left: 70px;
+    float: left;
+}
+
+.separador{
+    display: inline-block;
+    text-align: left;
+    margin-left: 60px;
+    margin-top: 80px;
+}
+
+
+div.comunidade{
+    margin-top: 150px;
+}
+
+h2.comunidade{
+    font-size: 75px;
+    font-family: "Athleta"
+}
+
+p.comunidade{
+    font-size: 45px;
+}
+
+hr.comunidade{
+    clear: left;
+    margin-top: 250px;
+}
+
+/* ---------------------------------- VENDA DE MATERIAIS USADOS ----------------------------------- */
+.sep{
+    display: inline-block                   ;
+}
+
+div.venda{
+    margin-top: 150px;
+    margin-left: 100px;
+    width: 850px;
+}
+
+img.venda{
+    float: right;
+    margin-right: 70px;
+    margin-top: 120px;
+}
+
+h2.venda{
+    font-size: 50px;
+    font-family: "Athleta"
+}
+
+p.venda{
+    font-size: 45px;
+}
+
+/* ---------------------------------- LOCALIDADE DE PONTOS ESPORTIVOS ----------------------------------- */
+hr.local{
+    clear: left;
+    margin-top: 180px;
+}
+
+div.local{
+    margin-top: 100px;
+}
+
+img.local{
+    width: 400px;
+    margin-left: 70px;
+    float: left;
+}
+
+.separadorlocal{
+    display: inline-block;
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 80px;
+}
+
+h2.local{
+    font-size: 45px;
+    font-family: "Athleta";
+    margin-left: 100px;
+}
+
+p.local{
+    font-size: 45px;
+    width: 900px;
+    margin-left: 60px;
+}
+/* ------------------------------------------------------------------------------------------------------- */
+
+
+/* --------------------------------------------- ABA CADASTRO -------------------------------------------- */
+img.tpCadastro{
+    width: 100%;
+}
