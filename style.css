@@ -11,7 +11,7 @@
 }
 
 body{
-    height: 2000px;
+    /* height: 2000px; */
 }
 
 a{
@@ -30,7 +30,7 @@ header{
     align-items: center;
     justify-content: space-between;
     z-index: 999;
-    flex-wrap: wrap;
+    flex-shrink: initial;
 }
 
 p{
@@ -40,6 +40,9 @@ p{
 
 .tpLogo{
     height: 60px;
+}
+
+.lg{
     margin-left: 1%;
 }
 
@@ -90,6 +93,7 @@ p{
 }
 
 .popup{
+    position: relative;
     display: flex;
     background-color: #F9A400;
     border-radius: 20px 0px 0px 20px;
@@ -98,6 +102,7 @@ p{
     z-index: 2;
     float: right;
     align-items: center;
+    top: -100px;
 }
 
 .txt > h2{

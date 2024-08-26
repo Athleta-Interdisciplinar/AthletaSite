@@ -9,14 +9,10 @@
     src: url(./fonte/Harabara\ Mais\ Demo.otf) format(opentype);
 }
 
-header{
-    display: inline-block;
-    width: 100%;
-}
-
-.fut{
+.volei{
     width: 40%;
-    float: right;
+    height: 100%;
+    position: absolute;
 }
 
 content{
@@ -25,8 +21,7 @@ content{
     height: 100%;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    top: -60px;
+    float: right;
 }
 
 input{
@@ -45,14 +40,13 @@ input{
     color: #3F3D3D;
 }
 
-#nomeCompleto, #nomeUsuario{
-    background-image: url(imagens/usuario.png);
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    background-position: 10px;
-}
+.bem-vindo{
+    font-family: "Athleta";
+    color: #3F3D3D;
+    font-size: 35px;
+    margin-bottom: 3%;
 
+}
 
 #email:valid{
     background-color: rgb(219, 250, 219);
@@ -76,11 +70,17 @@ input{
     background-position: 10px;
 }
 
-a{
-    color: #F9A400;
+#senha{
+    background-image: url(imagens/cadeado.png);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    background-position: 10px;
+    background-size: 28px;
 }
 
-#cadastre-se{
+
+#entrar{
     color: #6A6A6A;
     background-color: #F9A400;
     border: 0px;
@@ -91,22 +91,26 @@ a{
     padding: 0px;
 }
 
-#cadastre-se:hover{
+#entrar:hover{
     background-color: #ec9d00;
     color: white;
 }
 
-#cadastre-se:active{
+#entrar:active{
     background-color: #9d6900;
 }
 
+a{
+    color: #F9A400;
+}
+
 .logo{
-    position: relative;
+    position: absolute;
     z-index: 2;
     float: left;
     width: 3%;
-    top: 12px;
-    right: -95.5%;
+    left: 1%;
+    top: 1%;
 }
 
 .tit{
