@@ -11,7 +11,7 @@
 }
 
 body{
-    /* height: 2000px; */
+    /* height: 5000px; */
 }
 
 a{
@@ -94,7 +94,8 @@ p{
 
 .popup{
     position: relative;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     background-color: #F9A400;
     border-radius: 20px 0px 0px 20px;
     width: 60%;
@@ -103,31 +104,149 @@ p{
     float: right;
     align-items: center;
     top: -100px;
+    flex-wrap: initial;
 }
 
-.txt > h2{
+.popuptxt > h2{
     color: white;
     font-size: 39px;
 }
 
-.txt > p{
+.popuptxt > p{
     margin-top: 2%;
     color: white;
     font-size: 20px;
 }
 
 .popup > img{
-    width: 200px;
-    height: 200px;
+    width: 214px;
+    height: 182px;
     float: left;
     margin-right: 3%;
     margin-left: 2%;
-}
-
-.txt{
-    font-size: 100px;
+    min-width: 200px;
+    max-width: 214px;
 }
 
 at{
     font-family: 'Athleta';
+}
+
+
+.fundo_laranja{
+    width: 100%;
+    height: 520px;
+    z-index: -1;
+    margin-top: 350px;
+    background-color: #F9A400;
+    transform: skewY(-4deg);
+    display: grid;
+    color: white;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+}
+
+
+.fundo_laranja > img{
+    transform: skewY(4deg);
+    min-width: 100px;
+    max-width: 470px;
+    margin-left: 5%;
+    top: -20%;
+    position: relative;
+}
+
+.eventotxt{
+    display: flex;
+    transform: skewY(4deg);
+    align-items: center;
+    justify-content: left;
+    margin-left: 5%;
+}
+
+.eventotxt > p{
+    font-size: 2em;
+}
+
+p > span{
+    font-size: 2em;
+}
+
+.eventotxt > p{
+    display: inline-block;
+}
+
+
+.athleta_store{
+    width: 100%;
+    height: 570px;
+    color: #F9A400;
+    background-color: #F4F4F4;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+    transform: skewY(-4deg);
+    justify-content: center;
+}
+
+.athleta_store > p{
+    position: relative;
+    transform: skewY(4deg);
+    font-size: 2em;
+    left: 10%;
+}
+
+as{
+    font-size: 2em;
+
+}
+
+.athleta_store > img{
+    position: relative;
+    min-width: 100px;
+    max-width: 400px;
+    transform: skewY(4deg);
+    right: -25%;
+}
+
+
+.esportes{
+    display: grid;
+    background-color: #F9A400;
+    transform: skewY(-4deg);
+    grid-template-columns: 2fr 3fr;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 520px;
+    z-index: -1;
+    color: white;
+}
+
+.esportes > p{
+    transform: skewY(4deg);
+    font-size: 2em;
+
+}
+
+ep{
+    font-size: 2em;
+}
+
+.esportes > img{
+    transform: skewY(4deg);
+    top: 0px;
+    min-width: 100px;
+    max-width: 470px;
+    margin-left: 5%;
+    top: 8%;
+    position: relative;
+}
+
+footer{
+    
+    display: flex;
+    background-color: grey;
+    width: 100%;
+    height: 32em;
 }
