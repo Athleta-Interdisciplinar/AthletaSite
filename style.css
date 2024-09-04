@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
@@ -11,7 +11,7 @@
 }
 
 body{
-    /* height: 5000px; */
+    /* background-color: ; */
 }
 
 a{
@@ -30,11 +30,15 @@ header{
     align-items: center;
     justify-content: space-between;
     z-index: 999;
-    flex-shrink: initial;
+}
+
+.tpSobrenos, .tpSustentabilidade, .SobreAthleta{
+    margin-left: 10px;
+
 }
 
 p{
-    font-weight: bold;
+    font-weight: bold; 
     font-size: 100%;
 }
 
@@ -74,22 +78,24 @@ p{
     height: 100%;
     width: 60%;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
+    flex-direction: row;
+
 }
 
 .tenis{
     width: 100%;
     top: 0px;
+    z-index: 100;
 }
 
 
 .textoTenis{
     color: white;
-    margin-top: 23%;
+    margin-top: 280px;
     margin-left: 20px;
     font-size: 50px;
     position: absolute;
-    vertical-align: top;
 }
 
 .popup{
@@ -132,12 +138,20 @@ at{
     font-family: 'Athleta';
 }
 
+.linha{
+    background-image: url(imagens/Group\ 355.png);
+    width: 100%;
+    height: 500px;
+    background-position: left;
+    background-repeat: no-repeat;
+    margin-top: -3%;
+    margin-bottom: -5%;
+}
 
 .fundo_laranja{
     width: 100%;
     height: 520px;
     z-index: -1;
-    margin-top: 350px;
     background-color: #F9A400;
     transform: skewY(-4deg);
     display: grid;
@@ -187,13 +201,19 @@ p > span{
     align-items: center;
     transform: skewY(-4deg);
     justify-content: center;
+    position: relative;
+    z-index: 3;
+    background-image: url(imagens/Group\ 353.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    top: 0px;
 }
 
 .athleta_store > p{
     position: relative;
     transform: skewY(4deg);
     font-size: 2em;
-    left: 10%;
+    left: 37%;
 }
 
 as{
@@ -211,22 +231,27 @@ as{
 
 
 .esportes{
+    position: relative;
     display: grid;
     background-color: #F9A400;
-    transform: skewY(-4deg);
     grid-template-columns: 2fr 3fr;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 520px;
-    z-index: -1;
+    height: 850px;
+    z-index: 2;
     color: white;
+    content: "";
+    margin-top: -180px;
+    justify-content: center;
 }
 
 .esportes > p{
-    transform: skewY(4deg);
+    position: relative;
     font-size: 2em;
-
+    text-align: left;
+    max-width: 700px;
+    width: 100%;
 }
 
 ep{
@@ -234,19 +259,94 @@ ep{
 }
 
 .esportes > img{
-    transform: skewY(4deg);
-    top: 0px;
+    position: relative;
     min-width: 100px;
     max-width: 470px;
-    margin-left: 5%;
-    top: 8%;
-    position: relative;
+    top: 30%;
 }
 
 footer{
-    
+    position: relative;
     display: flex;
-    background-color: grey;
+    background-color: #FFFFFF;
     width: 100%;
-    height: 32em;
+    height: 700px;
+    z-index: 1;
+    background-image: url(imagens/blending\ 1725273097230.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-top: -5%;
+    align-items: end;
+}
+
+.outline{
+    display: flex;
+    border: 5px solid #F9A400;
+    border-bottom: none;
+    width: 320px;
+    border-radius: 20px 20px 0px 0px;
+    height: 420px;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+    left: 30px;
+    color: #3F3D3D;
+}
+
+.contatos{
+    background-color: #FFBE3F;
+    height: 410px;
+    width: 95%;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    align-items: ;
+    font-size: 30px;
+    flex-direction: column;
+}
+
+.contatos > h2{
+    position: relative;
+    top: 18px;
+    text-align: center;
+}
+
+.insta, .email, .telefone{
+    position: relative;
+    display: flex;
+    align-items: center;
+    left: 17px;
+    height: 60px;
+}
+
+.insta{
+    margin-top: 30px;
+}
+
+.insta > img{
+    width: 50px;
+}
+
+.insta > p, .email > p, .telefone > p{
+    color: white;
+    font-weight: normal;
+    position: relative;
+    left: 5px;
+}
+
+.email > p{
+    font-size: 20px;
+}
+
+.email{
+    top: 20px;
+}
+
+.telefone{
+    top: 35px;
+    left: 21px;
+}
+
+.telefone > p{
+    left: 10px;
+    font-size: 25px;
 }
