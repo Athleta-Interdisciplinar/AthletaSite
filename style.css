@@ -78,8 +78,7 @@ p{
     height: 100%;
     width: 60%;
     justify-content: space-between;
-    /* flex-wrap: nowrap; */
-    flex-direction: row;
+        flex-direction: row;
 
 }
 
@@ -104,13 +103,13 @@ p{
     grid-template-columns: 1fr 2fr;
     background-color: #F9A400;
     border-radius: 20px 0px 0px 20px;
-    width: 60%;
+    width: 800px;
     height: 270px;
     z-index: 2;
     float: right;
     align-items: center;
     top: -100px;
-    flex-wrap: initial;
+    /* flex-wrap: initial; */
 }
 
 .popuptxt > h2{
@@ -154,10 +153,10 @@ at{
     z-index: -1;
     background-color: #F9A400;
     transform: skewY(-4deg);
-    display: grid;
+    display: flex;
     color: white;
-    grid-template-columns: 2fr 3fr;
     align-items: center;
+    justify-content: center;
 }
 
 
@@ -165,16 +164,13 @@ at{
     transform: skewY(4deg);
     min-width: 100px;
     max-width: 470px;
-    margin-left: 5%;
-    top: -20%;
+    right: 50px;
+    top: -90px;
     position: relative;
 }
 
 .eventotxt{
-    display: flex;
     transform: skewY(4deg);
-    align-items: center;
-    justify-content: left;
     margin-left: 5%;
 }
 
@@ -186,18 +182,12 @@ p > span{
     font-size: 2em;
 }
 
-.eventotxt > p{
-    display: inline-block;
-}
-
-
 .athleta_store{
     width: 100%;
     height: 570px;
-    color: #F9A400;
+    color: #6C6D6E;
     background-color: #F4F4F4;
-    display: grid;
-    grid-template-columns: 3fr 2fr;
+    display: flex;
     align-items: center;
     transform: skewY(-4deg);
     justify-content: center;
@@ -206,52 +196,48 @@ p > span{
     background-image: url(imagens/Group\ 353.png);
     background-repeat: no-repeat;
     background-position: left;
-    top: 0px;
 }
 
 .athleta_store > p{
     position: relative;
     transform: skewY(4deg);
     font-size: 2em;
-    left: 37%;
+    left: 200px;
 }
 
 as{
     font-size: 2em;
-
 }
 
 .athleta_store > img{
     position: relative;
-    min-width: 100px;
-    max-width: 400px;
+    width: 400px;
     transform: skewY(4deg);
-    right: -25%;
+    margin-left: 180px;
 }
 
 
 .esportes{
     position: relative;
-    display: grid;
+    display: flex;
     background-color: #F9A400;
-    grid-template-columns: 2fr 3fr;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 850px;
+    height: 700px;
     z-index: 2;
     color: white;
-    content: "";
     margin-top: -180px;
     justify-content: center;
 }
 
-.esportes > p{
+.esportes > p{  
     position: relative;
-    font-size: 2em;
-    text-align: left;
-    max-width: 700px;
-    width: 100%;
+    font-size: 30px;
+    width: 700px;
+    top: 60px;
+    left: 40px;
+
 }
 
 ep{
@@ -260,9 +246,9 @@ ep{
 
 .esportes > img{
     position: relative;
-    min-width: 100px;
-    max-width: 470px;
-    top: 30%;
+    width: 470px;
+    top: 150px;
+    right: 40px;
 }
 
 footer{
@@ -277,6 +263,7 @@ footer{
     background-position: right;
     margin-top: -5%;
     align-items: end;
+    justify-content: center;
 }
 
 .outline{
@@ -291,6 +278,8 @@ footer{
     position: relative;
     left: 30px;
     color: #3F3D3D;
+    margin-left: -900px;
+
 }
 
 .contatos{
@@ -299,7 +288,6 @@ footer{
     width: 95%;
     border-radius: 20px 20px 0px 0px;
     display: flex;
-    align-items: ;
     font-size: 30px;
     flex-direction: column;
 }
@@ -309,6 +297,11 @@ footer{
     top: 18px;
     text-align: center;
 }
+
+.ft{
+    display: flex;
+}
+
 
 .insta, .email, .telefone{
     position: relative;
@@ -349,4 +342,24 @@ footer{
 .telefone > p{
     left: 10px;
     font-size: 25px;
+}
+
+
+.links_externos{
+    position: relative;
+    display: flex;
+    height: 420px;
+    left: 60px;
+    flex-direction: column;
+    color: #626161;
+}
+
+.links_externos > p{
+    font-size: 30px;
+}
+
+
+.links_externos > a{
+    margin-top: 15px;
+    font-size: 20px;
 }
