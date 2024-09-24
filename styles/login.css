@@ -6,16 +6,17 @@
 
 @font-face {
     font-family: 'Athleta';
-    src: url(./fonte/Harabara\ Mais\ Demo.otf) format(opentype);
+    src: url(../fonte/Harabara\ Mais\ Demo.otf) format(opentype);
 }
 
 body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(imagens/Group\ 353.png);
+    background-image: url(../imagens/Group\ 353.png);
     background-repeat: no-repeat;
     background-position: left;
+    background-size: 30%;
 }
 
 content{
@@ -62,7 +63,7 @@ input{
 }
 
 #email{
-    background-image: url(imagens/email.png);
+    background-image: url(../imagens/email.png);
     background-repeat: no-repeat;
     background-size: 35px;
     display: flex;
@@ -71,7 +72,7 @@ input{
 }
 
 #senha{
-    background-image: url(imagens/cadeado.png);
+    background-image: url(../imagens/cadeado.png);
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
