@@ -1,23 +1,28 @@
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- GERAIS -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
 *{
     margin: 0px;
     padding: 0px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Lexand Deca';
+    /* font-weight: 100; */
 }
-
 
 @font-face {
     font-family: 'Athleta';
     src: url(../fonte/Harabara\ Mais\ Demo.otf) format(opentype);
 }
 
-body{
-    /* background-color: ; */
+@font-face {
+    font-family: 'Lexand Deca';
+    src: url(../fonte/LexendDeca-VariableFont_wght.ttf) format(opentype);
 }
 
 a{
     text-decoration: none;
     color: inherit;
 }
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- HEADER -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
 header{
     top: 0px;
@@ -37,10 +42,6 @@ header{
 
 }
 
-p{
-    font-weight: bold; 
-    font-size: 100%;
-}
 
 .tpLogo{
     height: 60px;
@@ -78,24 +79,31 @@ p{
     height: 100%;
     width: 60%;
     justify-content: space-between;
-        flex-direction: row;
-
+    flex-direction: row;
 }
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- TÊNIS -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
 .tenis{
+    position: relative;
     width: 100%;
-    top: 0px;
-    z-index: 100;
+    height: 950px;
+    background-image: url(../imagens/tenis2.png);
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
 }
 
-
-.textoTenis{
-    color: white;
-    margin-top: 280px;
-    margin-left: 20px;
+.tenisTxt{
     font-size: 50px;
-    position: absolute;
+    color: white;
+    width: 900px;
+    margin-left: 50px;
 }
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- POPUP -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
 .popup{
     position: relative;
@@ -133,19 +141,22 @@ p{
     max-width: 214px;
 }
 
-at{
+.at, at{
     font-family: 'Athleta';
 }
 
 .linha{
-    background-image: url(imagens/Group\ 355.png);
+    background-image: url(../imagens/Group\ 355.png);
     width: 100%;
     height: 500px;
     background-position: left;
     background-repeat: no-repeat;
     margin-top: -3%;
     margin-bottom: -5%;
+    z-index: -1;
 }
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- EVENTOS  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
 .fundo_laranja{
     width: 100%;
@@ -182,6 +193,8 @@ p > span{
     font-size: 2em;
 }
 
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=- ATHLETA STORE -=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
 .athleta_store{
     width: 100%;
     height: 570px;
@@ -193,7 +206,7 @@ p > span{
     justify-content: center;
     position: relative;
     z-index: 3;
-    background-image: url(imagens/Group\ 353.png);
+    background-image: url(../imagens/Group\ 353.png);
     background-repeat: no-repeat;
     background-position: left;
 }
@@ -216,6 +229,8 @@ as{
     margin-left: 180px;
 }
 
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- ESPORTES -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
 
 .esportes{
     position: relative;
@@ -227,15 +242,16 @@ as{
     z-index: 2;
     color: white;
     margin-top: -180px;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .esportes > p{  
     position: relative;
-    font-size: 2em;
+    font-size: 30px;
     width: 700px;
     margin-right: 60px;
     top: 80px;
+    margin-left: 80px;
 }
 
 ep{
@@ -246,8 +262,9 @@ ep{
     position: relative;
     width: 470px;
     top: 150px;
-    margin-left: 60px;
 }
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- FOOTER -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
 footer{
     position: relative;
@@ -256,7 +273,7 @@ footer{
     width: 100%;
     height: 700px;
     z-index: 1;
-    background-image: url(imagens/blending\ 1725273097230.png);
+    background-image: url(../imagens/blending\ 1725273097230.png);
     background-repeat: no-repeat;
     background-position: right;
     margin-top: -5%;
@@ -274,10 +291,8 @@ footer{
     justify-content: center;
     align-items: end;
     position: relative;
-    left: 30px;
     color: #3F3D3D;
-    margin-left: -900px;
-
+    margin-left: -800px;
 }
 
 .contatos{
@@ -299,7 +314,6 @@ footer{
 .ft{
     display: flex;
 }
-
 
 .insta, .email, .telefone{
     position: relative;
@@ -342,7 +356,6 @@ footer{
     font-size: 25px;
 }
 
-
 .links_externos{
     position: relative;
     display: flex;
@@ -356,14 +369,7 @@ footer{
     font-size: 30px;
 }
 
-
 .links_externos > a{
     margin-top: 15px;
     font-size: 20px;
-}
-
-@media screen and (max-width: 1070px) {
-    header{
-        display: none;
-    }
 }

@@ -1,0 +1,105 @@
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- GERAIS -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+*{
+    z-index: 1;
+}
+
+header{
+    position: sticky;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=- SUSTENTÁVEL -=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.sustentabilidade{
+    display: flex;
+    position: relative;
+    top: -1px;
+    width: 100%;
+    background-image: url(../imagens/sustentavel2.png);
+    height: 580px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+}
+
+.sustentabilidadeTxt{
+    position: relative;
+    left: 80px;
+    width: 450px;
+    color: white;
+}
+
+.sustentabilidadeTxt > h2{
+    font-size: 50px;
+}
+
+.sustentabilidadeTxt > p{
+    font-size: 20px;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=- ODS -=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.ods{
+    position: relative;
+    margin-top: 70px;
+    width: 95%;
+}
+
+.ods > h2{
+    color: #F9A400;
+    font-size: 30px;
+    font-weight: 400;
+    width: 500px;
+}
+
+.ods > img{
+    float: right;
+    margin-top: 50px;
+}
+
+.ods > p, .odsTxt{
+    font-size: 28px;
+    color: #414141;
+}
+
+.odsTxt{
+    width: 50%;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=- GRID - ODS -=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.ods_fixo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.todas_ODS{
+    width: 990px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+.todas_ODS > img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- FOOTER -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+footer{
+    margin-top: -100px;
+    z-index: 0;
+    background-image: url(../imagens/blending\ 172.png);
+    background-position: bottom right;
+}

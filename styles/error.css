@@ -16,8 +16,23 @@ h1{
 
 p{
     font-size: 20px;
+    color: #6A6A6A;
 }
 
 .error, a{
     color: #F9A400;
+}
+
+li{
+    color: #6A6A6A;
+}
+
+ul{
+    position: relative;
+    left: 10px;
+}
+
+.tente{
+    margin-top: 22px;
+    font-size: 18px;
 }
