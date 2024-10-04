@@ -46,7 +46,7 @@ input{
     color: #3F3D3D;
     font-size: 35px;
     margin-bottom: 3%;
-
+    text-align: center;
 }
 
 #email:valid{

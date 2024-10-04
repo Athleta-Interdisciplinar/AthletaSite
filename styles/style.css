@@ -37,12 +37,6 @@ header{
     z-index: 999;
 }
 
-.tpSobrenos, .tpSustentabilidade, .SobreAthleta{
-    margin-left: 10px;
-
-}
-
-
 .tpLogo{
     height: 60px;
 }
@@ -78,7 +72,7 @@ header{
     align-items: center;
     height: 100%;
     width: 60%;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: row;
 }
 

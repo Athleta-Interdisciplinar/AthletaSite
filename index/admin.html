@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/admin.css">
+    <title>Athleta - Restrito</title>
+</head>
+<body>
+
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=- HEADER -=-=-=-=-=-=-=-=-=-=-=-=-=-  -->
+
+    <header>
+        <a href="index.html" class="lg">
+            <img src="../imagens/logo_Branca.png" alt="Logo Athleta" class="tpLogo">
+        </a>
+        <a href="index.html">
+            <div class="tpConta">
+            <p>Voltar para o site</p>
+            <img src="../imagens/log-in.png" alt="">     
+            </div>
+        </a>
+    </header>
+
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=- FUNÇÕES -=-=-=-=-=-=-=-=-=-=-=-=-=-  -->
+
+    <div class="funcoes">
+        <h2>Funções:</h2>
+        <br>
+        <a href="#addForum" class="addForum-btn">
+            <div class="" id="addForum-btn">Adicionar Fórum</div>
+        </a>
+        <br>
+        <a href="#aprEventos" class="aprEventos-btn">
+            <div class="aprEventos-btn" id="aprEventos-btn">Aprovar Eventos</div>
+        </a>
+    </div>
+    <br><br>
+
+
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=- ADD-FORUM -=-=-=-=-=-=-=-=-=-=-=-=-=-  -->
+    
+    <div id="addForum" class="addForum">
+        <a href="admin.html">
+            <img src="../imagens/Group 386.png" alt="" class="xis">
+        </a>
+
+        <!-- <form action="adicionar-forum">
+            <label for="nomeForum">
+                <input type="text" name="nomeForum" id="nomeForum" placeholder="Nome do Fórum: " required>
+            </label>
+            <br><br>
+            <label for="descricaoForum">
+                <input type="text" name="descricaoForum" id="descricaoForum" placeholder="Descrição: " required>
+            </label>
+            <br><br>
+            <label for="imagemForum">
+                <input type="file" name="imagemForum" id="imagemForum" accept="image/*" placeholder="Imagem de Fundo: ">
+            </label>
+            <br><br>
+            <input type="submit" value="Adicionar Forum">
+        </form> -->
+    </div>
+    <br><br>
+
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=- APROV-EVENTOS -=-=-=-=-=-=-=-=-=-=-=-=-  -->
+
+    <div class="aprEventos" id="aprEventos">
+        <a href="admin.html">
+            <img src="../imagens/Group 386.png" alt="" class="xis">
+        </a>
+        <form action="aprovar-eventos">
+            <label for="nomeEvento">
+                <input type="text" name="nomeEvento" id="nomeEvento" placeholder="Nome do Evento: ">
+            </label>
+            <br><br>
+            <label for="descricaoEvento">
+                <input type="text" name="descricaoEvento" id="descricaoEvento" placeholder="Descrição: ">
+            </label>
+            <br><br>
+            <label for="localEvento">
+                <input type="text" name="localEvento" id="localEvento" placeholder="Local: ">
+            </label>
+            <br><br>
+            <label for="organizadorEvento">
+                <input type="text" name="organizadorEvento" id="organizadorEvento" placeholder="Organizador: ">
+            </label>
+            <br><br>
+            <label for="dataEvento">
+                <input type="datetime" name="dataEvento" id="dataEvento" placeholder="Data do Evento: ">
+            </label>
+            <br><br>
+            <div class="apr_neg">
+                <div class="aprovar">Aprovar</div>
+                <div class="negar">Negar</div>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+</html>
