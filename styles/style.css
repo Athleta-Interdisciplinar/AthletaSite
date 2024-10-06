@@ -371,7 +371,7 @@ header{
 }
 
 .esportes-txt > h2{
-    font-size: 35px;
+    font-size: 60px;
     font-weight: 450;
 }
 
@@ -529,7 +529,7 @@ footer{
         display: flex;
         align-items: center;
         justify-content: center;
-        width: auto;
+        width: 60vw;
         height: auto;
         padding: 10px 30px;
     }
@@ -558,12 +558,13 @@ footer{
 
     .athleta_store{
         grid-template-columns: none;
-        grid-template-rows: 3fr 1fr;
+        grid-template-rows: 1fr 1fr;
         background-image: none;
-        height: 1000px;
+        height: 900px;
     }
 
     .athleta_store_txt{
+        margin-top: 100px;
         height: auto;
     }
 
@@ -572,7 +573,7 @@ footer{
     }
 
     .athleta_store_img{
-        margin-top: -205px;
+        margin-top: 20px;
     }
 
 
@@ -594,6 +595,32 @@ footer{
     }
 
     .esportes-txt > p{
+        padding: 0px 12px;
+        font-size: 23px;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-height: 450px){
+    .tenisTxt{
+        width: 500px;
+    }
+
+    .fundo_laranja{
+        height: 800px;
+    }
+
+    .fundo_laranja_img > img, .esportes-img > img, .athleta_store_img > img{
+        width: 50%;
+    }
+
+    .esportes-txt > h2{
+        font-size: 28px;
+    }
+
+    .esportes-txt > p{
+        padding: 0px 50px;
+        font-size: 23px;
         text-align: justify;
     }
 }
