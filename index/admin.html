@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/admin.css">
+    <link rel="shortcut icon" href="../imagens/acesso restrito.jpg" type="image/x-icon">
     <title>Athleta - Restrito</title>
 </head>
 <body>
+    <local id="addForum"></local>
+    <local id="aprEventos"></local>
 
     <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=- HEADER -=-=-=-=-=-=-=-=-=-=-=-=-=-  -->
 
     <header>
-        <a href="index.html" class="lg">
+        <a href="../index.html" class="lg">
             <img src="../imagens/logo_Branca.png" alt="Logo Athleta" class="tpLogo">
         </a>
-        <a href="index.html">
+        <a href="../index.html">
             <div class="tpConta">
             <p>Voltar para o site</p>
             <img src="../imagens/log-in.png" alt="">     
@@ -36,17 +39,17 @@
             <div class="aprEventos-btn" id="aprEventos-btn">Aprovar Eventos</div>
         </a>
     </div>
-    <br><br>
+    <br>
 
 
     <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=- ADD-FORUM -=-=-=-=-=-=-=-=-=-=-=-=-=-  -->
     
     <div id="addForum" class="addForum">
-        <a href="admin.html">
+        <a href="admin.html" style="width: 40px;">
             <img src="../imagens/Group 386.png" alt="" class="xis">
         </a>
 
-        <!-- <form action="adicionar-forum">
+        <form action="adicionar-forum">
             <label for="nomeForum">
                 <input type="text" name="nomeForum" id="nomeForum" placeholder="Nome do Fórum: " required>
             </label>
@@ -56,48 +59,50 @@
             </label>
             <br><br>
             <label for="imagemForum">
-                <input type="file" name="imagemForum" id="imagemForum" accept="image/*" placeholder="Imagem de Fundo: ">
+                <input type="file" name="imagemForum" id="imagemForum" accept="image/*" placeholder="Imagem de Fundo: " >
             </label>
             <br><br>
-            <input type="submit" value="Adicionar Forum">
-        </form> -->
+            <input type="submit" value="Adicionar Forum" class="add-btn">
+        </form>
     </div>
-    <br><br>
+    <br>
 
     <!-- -=-=-=-=-=-=-=-=-=-=-=-=- APROV-EVENTOS -=-=-=-=-=-=-=-=-=-=-=-=-  -->
 
     <div class="aprEventos" id="aprEventos">
-        <a href="admin.html">
+        <a href="admin.html" style="width: 40px;">
             <img src="../imagens/Group 386.png" alt="" class="xis">
         </a>
+
+        <div class="aprEventos-txt">
+            <div class="aprEventos-blocos">
+                <p>Nome do Evento: <spa></spa></p>
+            </div>
+            <div class="aprEventos-blocos">
+                <p>Descrição: <spa></spa></p>
+            </div>
+            <div class="aprEventos-blocos">
+                <p>Local: <spa></spa></p>
+            </div>
+            <div class="aprEventos-blocos">
+                <p>Organizador: <spa></spa></p>
+            </div>
+            <div class="aprEventos-blocos">
+                <p>Data do Evento: <spa></spa></p>
+            </div>
+        </div>
+
         <form action="aprovar-eventos">
-            <label for="nomeEvento">
-                <input type="text" name="nomeEvento" id="nomeEvento" placeholder="Nome do Evento: ">
-            </label>
-            <br><br>
-            <label for="descricaoEvento">
-                <input type="text" name="descricaoEvento" id="descricaoEvento" placeholder="Descrição: ">
-            </label>
-            <br><br>
-            <label for="localEvento">
-                <input type="text" name="localEvento" id="localEvento" placeholder="Local: ">
-            </label>
-            <br><br>
-            <label for="organizadorEvento">
-                <input type="text" name="organizadorEvento" id="organizadorEvento" placeholder="Organizador: ">
-            </label>
-            <br><br>
-            <label for="dataEvento">
-                <input type="datetime" name="dataEvento" id="dataEvento" placeholder="Data do Evento: ">
-            </label>
-            <br><br>
             <div class="apr_neg">
-                <div class="aprovar">Aprovar</div>
-                <div class="negar">Negar</div>
+                <input type="button" value="Aprovar" placeholder="Aprovar" class="aprovar">
+                <input type="button" value="Negar" class="negar">
             </div>
         </form>
     </div>
+    <br><br>
 
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=- GRÁFICOS -=-=-=-=-=-=-=-=-=-=-=-=-  -->
 
+    <h2 style="color: white; margin-left: 20px;">Gráficos: </h2>
 </body>
 </html>

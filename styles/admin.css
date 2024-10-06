@@ -1,4 +1,5 @@
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- GERAIS -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
 header{
     position: sticky;
 }
@@ -11,17 +12,11 @@ input{
     width: 100%;
 }
 
-form{
-    width: 85%;
-}
-
 .xis{
     float: left;
     width: 20px;
     margin: 10px;
 }
-
-
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- FUNÇÕES -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
@@ -36,6 +31,7 @@ form{
     flex-direction: column;
     color: #787878;
     margin: 20px;
+    z-index: 1;
 }
 
 .addForum-btn, .aprEventos-btn{
@@ -50,76 +46,157 @@ form{
     color: white;
 }
 
-
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- ADD-FÓRUM -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
 .addForum{
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: auto;
     background-color: #FFF;
     border-radius: 15px;
     flex-direction: column;
     color: #787878;
+    text-align: center;
+    z-index: 2;
+    padding: 15px;
 }
 
 .addForum > form{
-    margin: 0px 23px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.addForum > form > label > input{
+    padding: 8px;
+    width: 75%;
+    background-color: #D4D4D4;
+    border: 2px solid #9A9A9A;
+    border-radius: 5px;
+}
+
+.add-btn{
+    cursor: pointer;
+    padding: 5px;
+    width: 80%;
+    background-color: #F9A400;
+    border: 0px;
+    border-radius: 5px;
+    margin: 0px 10% 20px 10%;
+    height: 40px;
+    color: white;
+}
+
+.add-btn:hover{
+    background-color: #ec9d00;
+}
+
+.add-btn:active{
+    background-color: #9d6900;
 }
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=- APROV-EVENTOS -=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
 .aprEventos{
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: auto;
+    padding: 15px;
     background-color: #FFF;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     color: #787878;
+    z-index: 2;
 }
 
-/* .aprEventos > form{
-    margin: 0px 21px;
-} */
+.aprEventos > form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aprEventos-txt{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aprEventos-blocos{
+    height: auto;
+    padding: 5px;
+    width: 80%;
+    background-color: #D4D4D4;
+    border: 2px solid #9A9A9A;
+    border-radius: 5px;
+    margin: 2px 0px;
+}
+
+.aprEventos-blocos > p > spa{
+    color: black;
+}
 
 
 .apr_neg{
     display: flex;
     width: 100%;
     height: 40px;
-    justify-content: space-between;
+    margin-top: 25px;
+    margin: 25px 0px 10px 0px;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .aprovar, .negar{
-    width: 45%;
+    width: 40%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: white;
     border-radius: 10px;
     cursor: pointer;
+    border: 0px;
 }
+
 
 .aprovar{
-    background-color: green;
+    background-color: rgb(0, 197, 0);
 }
 
+.aprovar:hover{
+    background-color: rgb(0, 181, 0);
+}
+
+.aprovar:active{
+    background-color: rgb(0, 161, 0);
+
+}
+
+
 .negar{
-    background-color: red;
+    background-color: rgb(250, 0, 0);
+}
+
+.negar:hover{
+    background-color: rgb(181, 0, 0);
+}
+
+.negar:active{
+    background-color: rgb(161, 0, 0);
 }
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- POPUPS -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
-#addForum, #aprEventos{
+.addForum, .aprEventos{
     display: none;
 }
 
-
 #addForum:target{
-    display: flex;
+    ~.addForum{
+        display: flex;
+    }
 }
 
 #aprEventos:target{
-    display: flex;
+    ~.aprEventos{
+        display: flex;
+    }
 }
