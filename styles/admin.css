@@ -200,3 +200,15 @@ input{
         display: flex;
     }
 }
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- MEDIA -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+@media screen and (max-width: 980px) {
+    .aprEventos, .addForum{
+        width: 90vw;
+    }
+
+    .tpConta{
+        display: flex;
+    }
+}

@@ -163,23 +163,28 @@ header{
 
 .tenis{
     position: relative;
+    display: flex;
     width: 100%;
-    height: 950px;
+    height: 700px;
     background-image: url(../imagens/tenis2.png);
     z-index: 2;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .tenisTxt{
-    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
     color: white;
-    width: 900px;
-    margin-left: 50px;
+    font-size: 30px;
+    font-weight: 250;
 }
-
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- POPUP -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
 .popup{
@@ -188,34 +193,39 @@ header{
     grid-template-columns: 1fr 2fr;
     background-color: #F9A400;
     border-radius: 20px 0px 0px 20px;
-    width: 800px;
-    height: 270px;
+    width: 60vw;
+    height: 30vh;
     z-index: 2;
     float: right;
     align-items: center;
-    top: -100px;
-    /* flex-wrap: initial; */
+    top: -15vh;
 }
 
-.popuptxt > h2{
+.popup-img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-img > img{
+    width: 70%;
+    height: 70%;
+}
+
+.popuptxt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 25px;
     color: white;
-    font-size: 39px;
 }
 
-.popuptxt > p{
-    margin-top: 2%;
-    color: white;
-    font-size: 20px;
-}
-
-.popup > img{
-    width: 214px;
-    height: 182px;
-    float: left;
-    margin-right: 3%;
-    margin-left: 2%;
-    min-width: 200px;
-    max-width: 214px;
+.popuptxt > h2, .popuptxt > p{
+    width: 100%;
+    text-align: left;
 }
 
 .at, at{
@@ -228,6 +238,7 @@ header{
     height: 500px;
     background-position: left;
     background-repeat: no-repeat;
+    background-position: 0px -700px;
     margin-top: -3%;
     margin-bottom: -5%;
     z-index: -1;
@@ -236,110 +247,138 @@ header{
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- EVENTOS  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
 .fundo_laranja{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
     width: 100%;
-    height: 520px;
+    height: auto;
+    padding: 0px 0px 50px 0px;
     z-index: -1;
     background-color: #F9A400;
     transform: skewY(-4deg);
-    display: flex;
     color: white;
-    align-items: center;
-    justify-content: center;
 }
 
-
-.fundo_laranja > img{
+.fundo_laranja_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
     transform: skewY(4deg);
-    min-width: 100px;
-    max-width: 470px;
-    right: 50px;
-    top: -90px;
-    position: relative;
+    margin-top: -30px;
+
+}
+
+.fundo_laranja_img > img{
+    width: 80%;
 }
 
 .eventotxt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     transform: skewY(4deg);
-    margin-left: 5%;
+}
+
+.eventotxt > h2{
+    font-size: 50px;
 }
 
 .eventotxt > p{
-    font-size: 2em;
-}
-
-p > span{
-    font-size: 2em;
+    font-size: 30px;
 }
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=- ATHLETA STORE -=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
 .athleta_store{
-    width: 100%;
-    height: 570px;
-    color: #6C6D6E;
-    background-color: #F4F4F4;
-    display: flex;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
     align-items: center;
-    transform: skewY(-4deg);
     justify-content: center;
     position: relative;
-    z-index: 3;
     background-image: url(../imagens/Group\ 353.png);
     background-repeat: no-repeat;
     background-position: left;
+    width: 100%;
+    height: auto;
+    color: #6C6D6E;
+    background-color: #F4F4F4;
+    transform: skewY(-4deg);
+    z-index: 3;
 }
 
-.athleta_store > p{
-    position: relative;
+.athleta_store_txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     transform: skewY(4deg);
-    font-size: 2em;
-    left: 200px;
+    width: 100%;
+    height: 100%;
 }
 
-as{
-    font-size: 2em;
+.athleta_store_txt > h2{
+    font-size: 50px;
+    font-weight: 450;
+
 }
 
-.athleta_store > img{
-    position: relative;
-    width: 400px;
+.athleta_store_txt > p{
+    font-size: 30px;
+    width: 80%;
+    text-align: justify;
+}
+
+.athleta_store_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transform: skewY(4deg);
-    margin-left: 180px;
+}
+
+.athleta_store_img > img{
+    width: 80%;
 }
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- ESPORTES -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
 
 .esportes{
-    position: relative;
-    display: flex;
-    background-color: #F9A400;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
     width: 100%;
-    height: 700px;
-    z-index: 2;
+    height: auto;
+    padding: 0px 0px 50px 0px;
+    z-index: -1;
+    background-color: #F9A400;
     color: white;
-    margin-top: -180px;
+    margin-top: -50px;
+    padding-top: 150px;
+}
+
+.esportes-img{
+    display: flex;
+    align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: -30px;
 }
 
-.esportes > p{  
-    position: relative;
+.esportes-img > img{
+    width: 80%;
+}
+
+.esportes-txt > h2{
+    font-size: 35px;
+    font-weight: 450;
+}
+
+.esportes-txt > p{  
     font-size: 30px;
-    width: 700px;
-    margin-right: 60px;
-    top: 80px;
-    margin-left: 80px;
 }
 
-ep{
-    font-size: 2em;
-}
-
-.esportes > img{
-    position: relative;
-    width: 470px;
-    top: 150px;
-}
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- FOOTER -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
@@ -456,18 +495,7 @@ footer{
 #menuHamb:target{
     display: flex;
     position: fixed;
-    /* height: 80%; */
 }
-
-/* #menuHamb:target ~ .tenis,
-#menuHamb:target ~ .popup,
-#menuHamb:target ~ .linha,
-#menuHamb:target ~ .athleta_store,
-#menuHamb:target ~ .fundo_laranja,
-#menuHamb:target ~ .esportes,
-#menuHamb:target ~ footer {
-    display: none;
-} */
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- MEDIA -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 @media screen and (max-width: 980px) {
@@ -487,5 +515,85 @@ footer{
         display: block;
     }
 
+    .tenisTxt{
+        width: 350px;
+    }
 
+
+
+    .popup-img{
+        display: none;
+    }
+
+    .popup{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        padding: 10px 30px;
+    }
+
+
+
+    .fundo_laranja{
+        margin-top: -200px;
+        grid-template-columns: none;
+        grid-template-rows: 2fr 3fr;
+    }
+
+    .eventotxt{
+        padding: 30px;
+    }
+
+    .eventotxt > h2{
+        text-align: center;
+    }
+
+    .eventotxt > p{
+        text-align: center;
+    }
+
+
+
+    .athleta_store{
+        grid-template-columns: none;
+        grid-template-rows: 3fr 1fr;
+        background-image: none;
+        height: 1000px;
+    }
+
+    .athleta_store_txt{
+        height: auto;
+    }
+
+    .athleta_store_txt > p{
+        text-align: justify;
+    }
+
+    .athleta_store_img{
+        margin-top: -205px;
+    }
+
+
+
+    .esportes{
+        margin-top: -200px;
+        grid-template-columns: none;
+        grid-template-rows: 2fr 3fr;
+        padding-top: 350px;
+    }
+
+    .esportes-txt{
+        padding: 30px;
+    }
+
+    .esportes-txt > h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .esportes-txt > p{
+        text-align: justify;
+    }
 }
