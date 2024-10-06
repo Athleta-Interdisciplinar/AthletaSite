@@ -4,6 +4,10 @@ header{
     position: sticky;
 }
 
+#menuHamb{
+    margin-top: 0px;
+}
+
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- BASQUETE -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
 .basquete{
@@ -40,9 +44,6 @@ header{
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- OQUE É -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
 .oque_e{
-    /* display: flex; */
-    /* width: 100%; */
-    /* flex-direction: column; */
     padding: 0px 0px 0px 40px;
 }
 
@@ -76,8 +77,8 @@ header{
 }
 
 .oque_txt > p{
-    color: #626161;
-    font-size: 1.5em;
+    color: #6a6a6a;
+
 }
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- FOOTER -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */

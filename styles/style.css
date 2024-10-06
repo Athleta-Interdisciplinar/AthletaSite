@@ -33,11 +33,12 @@ header{
     height: 80px;
     align-items: center;
     justify-content: space-between;
-    z-index: 999;
+    z-index: 1000;
 }
 
 .tpLogo{
     height: 60px;
+    margin-left: 10px;
 }
 
 .lg{
@@ -73,6 +74,89 @@ header{
     width: 60%;
     justify-content: space-evenly;
     flex-direction: row;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=- MENU - HAMBURGUER -=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.hamb{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#menuHamb{
+    flex-direction: column;
+    margin-top: 0;
+    background-color: #F9A400;
+    width: 100%;
+    height: 100%;
+    margin-top: 80px;
+    color: white;
+    display: none;
+    z-index: 999;
+}
+
+#menuHamb > a{
+    display: flex;
+    justify-content: center;
+}
+
+.cont{
+    height: 10vh;
+}
+
+.fechado{
+    display: block;
+    width: 20px;
+    margin: 20px;
+}
+
+.hamb-conta{
+    display: flex;
+    height: 10vh;
+    width: 50vw;
+    background-color: #FFCC68;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 4px white solid;
+    padding: 0px 5vw;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.hamb-conta > img{
+    margin-left: 2vh;
+    width: 8vh;
+    height: 8vh;
+}
+
+.hamb-redirect{
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 3vh 0vh;
+    padding: 2vh;
+    border-bottom: 2px solid white;
+}
+
+.hamb-redirect > p{
+    width: 100%;
+    font-size: 5vh;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.hamb-redirect > p > img{
+    display: inline-block;
+    width: 5vh;
+}
+
+
+#menuHamb:target{
+    display: flex;
 }
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- TÊNIS -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
@@ -365,4 +449,43 @@ footer{
 .links_externos > a{
     margin-top: 15px;
     font-size: 20px;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- TARGET -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+#menuHamb:target{
+    display: flex;
+    position: fixed;
+    /* height: 80%; */
+}
+
+/* #menuHamb:target ~ .tenis,
+#menuHamb:target ~ .popup,
+#menuHamb:target ~ .linha,
+#menuHamb:target ~ .athleta_store,
+#menuHamb:target ~ .fundo_laranja,
+#menuHamb:target ~ .esportes,
+#menuHamb:target ~ footer {
+    display: none;
+} */
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- MEDIA -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+@media screen and (max-width: 980px) {
+    .nav, .tpConta{
+        display: none;
+    }
+
+    .tpConta{
+        display: none;
+    }
+
+    header{
+        border-bottom: 2px solid white;
+    }
+
+    .hamb{
+        display: block;
+    }
+
+
 }

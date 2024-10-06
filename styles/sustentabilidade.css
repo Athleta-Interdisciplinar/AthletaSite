@@ -8,6 +8,10 @@ header{
     position: sticky;
 }
 
+#menuHamb{
+    margin-top: 0px;
+}
+
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=- SUSTENTÁVEL -=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
 .sustentabilidade{
@@ -20,21 +24,25 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .sustentabilidadeTxt{
-    position: relative;
-    left: 80px;
-    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
     color: white;
 }
 
 .sustentabilidadeTxt > h2{
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .sustentabilidadeTxt > p{
-    font-size: 20px;
+    font-size: 15px;
 }
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=- ODS -=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
@@ -48,24 +56,24 @@ content{
 .ods{
     position: relative;
     margin-top: 70px;
-    width: 95%;
+    width: 100%;
 }
 
 .ods > h2{
     color: #F9A400;
     font-size: 30px;
     font-weight: 400;
-    width: 500px;
+    width: auto;
+    text-align: center;
 }
 
-.ods > img{
+.ods-img > img{
     float: right;
     margin-top: 50px;
 }
 
 .ods > p, .odsTxt{
-    font-size: 28px;
-    color: #414141;
+    color: #6a6a6a;
 }
 
 .odsTxt{
@@ -82,24 +90,82 @@ content{
 }
 
 .todas_ODS{
-    width: 990px;
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
 }
 
 .todas_ODS > img{
-    width: 100%;
-    height: 100%;
+    width: 100px;
+    height: 100px;
 }
 
 
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- FOOTER -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
-footer{
+/* footer{
     margin-top: -100px;
     z-index: 0;
     background-image: url(../imagens/blending\ 172.png);
     background-position: bottom right;
+} */
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- MEDIA -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+@media screen and (max-width: 1200px){
+    content{
+        display: block;
+    }
+
+    .ods{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .ods > p{
+        width: 90%;
+    }
+
+    .ods-img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .odsTxt{
+        width: 90%;
+        text-align: justify;
+    }
+
+    .odsTxt > p{
+        width: 100%;
+    }
+
+    .ods-img > img{
+        float: none;
+        width: 70%;
+    }
+}
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=- MEDIA - ODS -=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+
+@media screen and (max-width: 1200px) {
+    .todas_ODS {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .todas_ODS {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .todas_ODSr {
+        grid-template-columns: 1fr; 
+    }
 }
