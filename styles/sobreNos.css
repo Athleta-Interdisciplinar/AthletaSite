@@ -91,9 +91,44 @@ header{
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- CARROSSEL -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
+.carousel-outline{
+    display: grid;
+    grid-template-columns: 3fr 15fr 3fr;
+    width: 100%;
+}
+
+.carousel-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 37px;
+}
+
+.carousel-button > button{
+    border: 0px;
+    color: white;
+    background-color: #F9A400;
+    width: 100px;
+    height: 100%;
+    border-radius: 20px;
+    border: 3px solid #e0e0e0;
+    font-size: 30px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.carousel-button > button:hover{
+    background-color: white;
+    color: #F9A400;
+}
+
+.carousel-button > button:active{
+    background-color: rgb(196, 196, 196);
+}
+
 .carousel-container {
-    width: 40%;
-    margin: 50px auto;
+    width: 70%;
+    margin: auto;
     overflow: hidden;
     position: relative;
 }
@@ -198,8 +233,18 @@ header{
     display: none;
 }
 
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- FOOTER -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+footer{
+    background-image: none;
+    border-top: 3px solid #f9a400;
+}
+
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- MEDIA -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 @media screen and (max-width: 1070px){
+    .nav-dot{
+        display: none;
+    }
+
     .germinare-img{
         display: none;
     }
@@ -228,6 +273,12 @@ header{
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         width: 100%;
+    }
+
+    .carousel-button > button{
+        width: 40px;
+        height: 28%;
+        border-radius: 15%;
     }
 
     .carousel-container{

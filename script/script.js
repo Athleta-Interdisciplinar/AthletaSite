@@ -17,6 +17,16 @@ function nextCard() {
     updateCarousel();
 }
 
+function previous(){
+    if(currentIndex > 0){
+    currentIndex = (currentIndex - 1) % totalCards;
+    }
+    else{
+        currentIndex = totalCards - 1
+    }
+    updateCarousel();
+}
+
 // Configura o intervalo para mudar o card automaticamente a cada 30 segundos
 setInterval(nextCard, intervalTime);
 
