@@ -497,6 +497,18 @@ footer{
     position: fixed;
 }
 
+#menuHamb:target ~ * {
+    display: none;
+}
+  
+#menuHamb:target ~ header {
+    display: block;
+}
+
+#menuHamb:target {
+    display: block;
+}
+
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- MEDIA -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 @media screen and (max-width: 980px) {
     .nav, .tpConta{

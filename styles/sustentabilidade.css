@@ -23,6 +23,7 @@ header{
     height: 580px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     align-items: center;
     justify-content: center;
     text-align: center;

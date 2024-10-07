@@ -116,10 +116,13 @@ header{
 
 .profile-picture img {
     border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
     width: 100px;
     height: 100px;
     margin-right: 20px;
     border: 3px solid #f9a6006b;
+    background-position: center;
 }
 
 .profile-info {
@@ -224,6 +227,27 @@ header{
         display: grid;
         grid-template-rows: 1fr 1fr;
         width: 100%;
+    }
+
+    .carousel-card{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .profile-picture{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .profile-picture > img{
+        width: 150px;
+        height: 150px;
+        margin: 0px;
+    }
+
+    .profile-info{
+        text-align: center;
     }
 }
 
