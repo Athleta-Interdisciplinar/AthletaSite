@@ -92,7 +92,7 @@ header{
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- CARROSSEL -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
 .carousel-container {
-    width: 80%;
+    width: 40%;
     margin: 50px auto;
     overflow: hidden;
     position: relative;
@@ -180,6 +180,7 @@ header{
     color: #6a6a6a;
     text-align: justify;
     width: 95%;
+    font-size: 20px;
 }
 
 .germinare-img{
@@ -225,8 +226,12 @@ header{
 
     .germinare-txt{
         display: grid;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         width: 100%;
+    }
+
+    .carousel-container{
+        width: 80%;
     }
 
     .carousel-card{
