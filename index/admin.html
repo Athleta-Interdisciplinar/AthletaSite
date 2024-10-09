@@ -29,6 +29,7 @@
     <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=- FUNÇÕES -=-=-=-=-=-=-=-=-=-=-=-=-=-  -->
 
     <div class="funcoes">
+        <br>
         <h2>Funções:</h2>
         <br>
         <a href="#addForum" class="addForum-btn">
@@ -38,6 +39,11 @@
         <a href="#aprEventos" class="aprEventos-btn">
             <div class="aprEventos-btn" id="aprEventos-btn">Aprovar Eventos</div>
         </a>
+        <br>
+        <a href="#addAdmin" class="addAdmin-btn">
+            <div class="addAdmin-btn" id="addAdmin-btn">Adicionar Admin</div>
+        </a>
+        <br>
     </div>
     <br>
 
@@ -53,15 +59,11 @@
             <label for="nomeForum">
                 <input type="text" name="nomeForum" id="nomeForum" placeholder="Nome do Fórum: " required>
             </label>
-            <br><br>
+            <br>
             <label for="descricaoForum">
                 <input type="text" name="descricaoForum" id="descricaoForum" placeholder="Descrição: " required>
             </label>
-            <br><br>
-            <!-- <label for="imagemForum">
-                <input type="file" name="imagemForum" id="imagemForum" accept="image/*" placeholder="Imagem de Fundo: " >
-            </label> -->
-            <br><br>
+            <br>
             <input type="submit" value="Adicionar Forum" class="add-btn">
         </form>
     </div>
@@ -100,6 +102,31 @@
         </form>
     </div>
     <br><br>
+
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=- ADD-ADMIN -=-=-=-=-=-=-=-=-=-=-=-=-=-  -->
+
+    <div id="addAdmin" class="addAdmin">
+        <a href="admin.html" style="width: 40px;">
+            <img src="../imagens/Group 386.png" alt="" class="xis">
+        </a>
+
+        <form action="adicionar-admin">
+            <label for="nomeAdmin">
+                <input type="text" name="nomeAdmin" id="nomeAdmin" placeholder="Nome: " required>
+            </label>
+            <br>
+            <label for="emailAdmin">
+                <input type="email" name="emailAdmin" id="emailAdmin" placeholder="Email: " required>
+            </label>
+            <br>
+            <label for="passwordAdmin">
+                <input type="password" name="passwordAdmin" id="passwordAdmin" placeholder="Senha: " required>
+            </label>
+            <br>
+            <input type="submit" value="Adicionar Admin" class="addAdmin-inp">
+        </form>
+    </div>
+    <br>
 
     <!-- -=-=-=-=-=-=-=-=-=-=-=-=- GRÁFICOS -=-=-=-=-=-=-=-=-=-=-=-=-  -->
 

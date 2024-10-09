@@ -22,7 +22,7 @@ input{
 
 .funcoes{
     width: 300px;
-    height: 200px;
+    height: 280px;
     background-color: #FFF;
     border-radius: 15px;
     display: flex;
@@ -34,7 +34,7 @@ input{
     z-index: 1;
 }
 
-.addForum-btn, .aprEventos-btn{
+.addForum-btn, .aprEventos-btn, .addAdmin-btn{
     width: 80%;
     height: 20%;
     background-color: #f9a400;
@@ -183,9 +183,59 @@ input{
     background-color: rgb(161, 0, 0);
 }
 
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- ADD-ADMIN -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.addAdmin{
+    width: 400px;
+    height: auto;
+    background-color: #FFF;
+    border-radius: 15px;
+    flex-direction: column;
+    color: #787878;
+    text-align: center;
+    z-index: 2;
+    padding: 15px;
+}
+
+.addAdmin > form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.addAdmin > form > label > input{
+    padding: 8px;
+    width: 75%;
+    background-color: #D4D4D4;
+    border: 2px solid #9A9A9A;
+    border-radius: 5px;
+}
+
+.addAdmin-inp{
+    cursor: pointer;
+    padding: 5px;
+    width: 80%;
+    background-color: #F9A400;
+    border: 0px;
+    border-radius: 5px;
+    margin: 0px 10% 20px 10%;
+    height: 40px;
+    color: white;
+}
+
+.add-btn:hover{
+    background-color: #ec9d00;
+}
+
+.add-btn:active{
+    background-color: #9d6900;
+}
+
+
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- POPUPS -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
-.addForum, .aprEventos{
+.addForum, .aprEventos, .addAdmin{
     display: none;
 }
 
@@ -201,10 +251,14 @@ input{
     }
 }
 
+#addAdmin:target{
+    display: flex;
+}
+
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- MEDIA -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
 @media screen and (max-width: 980px) {
-    .aprEventos, .addForum{
+    .aprEventos, .addForum, .addAdmin{
         width: 90vw;
     }
 
