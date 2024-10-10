@@ -319,9 +319,8 @@ footer{
         height: 300px;
     }
 
-    .germinare-img-txt > img{
-        /* width: 1000px; */
-    }
+    /* .germinare-img-txt > img{
+    } */
 }
 
 @media screen and (max-height: 450px){
