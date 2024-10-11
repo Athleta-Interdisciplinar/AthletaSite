@@ -361,6 +361,10 @@ header{
 
 }
 
+.athleta_store_txt > img{
+    display: none;
+}
+
 .athleta_store_txt > p{
     font-size: 30px;
     width: 80%;
@@ -416,15 +420,11 @@ header{
     font-size: 30px;
 }
 
-
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- FOOTER -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
 footer{
     width: 100%;
     height: 400px;
-    /* background-image: url(../imagens/Group\ 356.png);    */
-    background-repeat: no-repeat;
-    background-position: 500px -395px;
 }
 
 
@@ -510,7 +510,8 @@ footer{
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- MEDIA -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 @media screen and (max-width: 980px) {
     .tenis{
-        background-image: url(../imagens/basquete2.jpg);
+        background-image: url(../imagens/tenis3.jpg);
+        background-position: center;
     }
 
     .nav, .tpConta{
@@ -582,11 +583,17 @@ footer{
         height: auto;
     }
 
+    .athleta_store_txt > img{
+        display: flex;
+        width: 55%;
+    }
+
     .athleta_store_txt > p{
         text-align: center;
     }
 
     .athleta_store_img{
+        display: none;
         margin-top: 20px;
     }
 

@@ -67,6 +67,8 @@ header{
 .ideia-txt{
     color: #6a6a6a;
     text-align: justify;
+    font-size: 20px;
+
 }
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=- NOSSA EQUIPE -=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
@@ -318,9 +320,6 @@ footer{
     .germinare-img-txt{
         height: 300px;
     }
-
-    /* .germinare-img-txt > img{
-    } */
 }
 
 @media screen and (max-height: 450px){
