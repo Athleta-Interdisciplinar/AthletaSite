@@ -309,6 +309,15 @@ footer{
     .profile-info{
         text-align: center;
     }
+
+    .germinare-title{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .germinare-title > img{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 850px) {

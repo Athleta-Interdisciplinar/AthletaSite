@@ -230,7 +230,7 @@ header{
     grid-template-columns: 1fr 2fr;
     background-color: #F9A400;
     border-radius: 20px 0px 0px 20px;
-    width: 60vw;
+    width: 65vw;
     height: 30vh;
     z-index: 2;
     float: right;
@@ -451,6 +451,8 @@ footer{
 
 .footer-redirect > h2{
     margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 30px;
 }
 
 .footer-redirect > a{
@@ -528,6 +530,10 @@ footer{
 
     .hamb{
         display: block;
+    }
+
+    .hamb-redirect > p{
+        font-size: 30px;
     }
 
     .tenisTxt{
