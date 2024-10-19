@@ -9,8 +9,6 @@
     <title>Athleta - Restrito</title>
 </head>
 <body>
-    <local id="addForum"></local>
-    <local id="aprEventos"></local>
 
     <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=- HEADER -=-=-=-=-=-=-=-=-=-=-=-=-=-  -->
 
@@ -32,99 +30,22 @@
         <br>
         <h2>Funções:</h2>
         <br>
-        <a href="#addForum" class="addForum-btn">
+        <a href="addForum.html" class="addForum-btn">
             <div class="" id="addForum-btn">Adicionar Fórum</div>
         </a>
         <br>
-        <a href="#aprEventos" class="aprEventos-btn">
+        <a href="aprEventos.html" class="aprEventos-btn">
             <div class="aprEventos-btn" id="aprEventos-btn">Aprovar Eventos</div>
         </a>
         <br>
-        <a href="#addAdmin" class="addAdmin-btn">
+        <a href="addAdmin.html" class="addAdmin-btn">
             <div class="addAdmin-btn" id="addAdmin-btn">Adicionar Admin</div>
         </a>
         <br>
-    </div>
-    <br>
-
-
-    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=- ADD-FORUM -=-=-=-=-=-=-=-=-=-=-=-=-=-  -->
-    
-    <div id="addForum" class="addForum">
-        <a href="admin.html" style="width: 40px;">
-            <img src="../imagens/Group 386.png" alt="" class="xis">
+        <a href="addFiltro.html" class="addFiltro-btn">
+            <div class="addFiltro-btn" id="addFiltro-btn">Adicionar Filtro</div>
         </a>
-
-        <form action="adicionar-forum">
-            <label for="nomeForum">
-                <input type="text" name="nomeForum" id="nomeForum" placeholder="Nome do Fórum: " required>
-            </label>
-            <br>
-            <label for="descricaoForum">
-                <input type="text" name="descricaoForum" id="descricaoForum" placeholder="Descrição: " required>
-            </label>
-            <br>
-            <input type="submit" value="Adicionar Forum" class="add-btn">
-        </form>
-    </div>
-    <br>
-
-    <!-- -=-=-=-=-=-=-=-=-=-=-=-=- APROV-EVENTOS -=-=-=-=-=-=-=-=-=-=-=-=-  -->
-
-    <div class="aprEventos" id="aprEventos">
-        <a href="admin.html" style="width: 40px;">
-            <img src="../imagens/Group 386.png" alt="" class="xis">
-        </a>
-
-        <div class="aprEventos-txt">
-            <div class="aprEventos-blocos">
-                <p>Nome do Evento: <spa></spa></p>
-            </div>
-            <div class="aprEventos-blocos">
-                <p>Descrição: <spa></spa></p>
-            </div>
-            <div class="aprEventos-blocos">
-                <p>Local: <spa></spa></p>
-            </div>
-            <div class="aprEventos-blocos">
-                <p>Organizador: <spa></spa></p>
-            </div>
-            <div class="aprEventos-blocos">
-                <p>Data do Evento: <spa></spa></p>
-            </div>
-        </div>
-
-        <form action="aprovar-eventos">
-            <div class="apr_neg">
-                <input type="button" value="Aprovar" placeholder="Aprovar" class="aprovar">
-                <input type="button" value="Negar" class="negar">
-            </div>
-        </form>
-    </div>
-    <br><br>
-
-    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=- ADD-ADMIN -=-=-=-=-=-=-=-=-=-=-=-=-=-  -->
-
-    <div id="addAdmin" class="addAdmin">
-        <a href="admin.html" style="width: 40px;">
-            <img src="../imagens/Group 386.png" alt="" class="xis">
-        </a>
-
-        <form action="adicionar-admin">
-            <label for="nomeAdmin">
-                <input type="text" name="nomeAdmin" id="nomeAdmin" placeholder="Nome: " required>
-            </label>
-            <br>
-            <label for="emailAdmin">
-                <input type="email" name="emailAdmin" id="emailAdmin" placeholder="Email: " required>
-            </label>
-            <br>
-            <label for="passwordAdmin">
-                <input type="password" name="passwordAdmin" id="passwordAdmin" placeholder="Senha: " required>
-            </label>
-            <br>
-            <input type="submit" value="Adicionar Admin" class="addAdmin-inp">
-        </form>
+        <br>
     </div>
     <br>
 

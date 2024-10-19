@@ -12,17 +12,11 @@ input{
     width: 100%;
 }
 
-.xis{
-    float: left;
-    width: 20px;
-    margin: 10px;
-}
-
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- FUNÇÕES -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
 .funcoes{
     width: 300px;
-    height: 280px;
+    height: 320px;
     background-color: #FFF;
     border-radius: 15px;
     display: flex;
@@ -34,7 +28,7 @@ input{
     z-index: 1;
 }
 
-.addForum-btn, .aprEventos-btn, .addAdmin-btn{
+.addForum-btn, .aprEventos-btn, .addAdmin-btn, .addFiltro-btn{
     width: 80%;
     height: 20%;
     background-color: #f9a400;
@@ -58,6 +52,8 @@ input{
     text-align: center;
     z-index: 2;
     padding: 15px;
+    padding-top: 35px;
+    margin-top: 50px;
 }
 
 .addForum > form{
@@ -107,6 +103,8 @@ input{
     flex-direction: column;
     color: #787878;
     z-index: 2;
+    padding-top: 35px;
+    margin-top: 50px;
 }
 
 .aprEventos > form{
@@ -195,6 +193,8 @@ input{
     text-align: center;
     z-index: 2;
     padding: 15px;
+    padding-top: 35px;
+    margin-top: 50px;
 }
 
 .addAdmin > form{
@@ -224,20 +224,66 @@ input{
     color: white;
 }
 
-.add-btn:hover{
+.addAdmin-inp:hover{
     background-color: #ec9d00;
 }
 
-.add-btn:active{
+.addAdmin-inp:active{
     background-color: #9d6900;
 }
 
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- ADD-ADMIN -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.addFiltro{
+    width: 400px;
+    height: auto;
+    background-color: #FFF;
+    border-radius: 15px;
+    flex-direction: column;
+    color: #787878;
+    text-align: center;
+    z-index: 2;
+    padding: 15px;
+    padding-top: 35px;
+    margin-top: 50px;
+}
+
+.addFiltro > form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.addFiltro > form > label > input{
+    padding: 8px;
+    width: 75%;
+    background-color: #D4D4D4;
+    border: 2px solid #9A9A9A;
+    border-radius: 5px;
+}
+
+.addFiltro-inp{
+    cursor: pointer;
+    padding: 5px;
+    width: 80%;
+    background-color: #F9A400;
+    border: 0px;
+    border-radius: 5px;
+    margin: 0px 10% 20px 10%;
+    height: 40px;
+    color: white;
+}
+
+.addFiltro-inp:hover{
+    background-color: #ec9d00;
+}
+
+.addFiltro-inp:active{
+    background-color: #9d6900;
+}
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- POPUPS -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
-
-.addForum, .aprEventos, .addAdmin{
-    display: none;
-}
 
 #addForum:target{
     ~.addForum{
