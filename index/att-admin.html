@@ -6,16 +6,17 @@
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/admin.css">
     <link rel="shortcut icon" href="../imagens/acesso restrito.jpg" type="image/x-icon">
-    <title>Athleta - Adicionar Fórum</title>
+    <title>Athleta - Atualizar Admin</title>
 </head>
 <body>
+
     <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=- HEADER -=-=-=-=-=-=-=-=-=-=-=-=-=-  -->
 
     <header>
         <a href="../index.html" class="lg">
             <img src="../imagens/logo_Branca.png" alt="Logo Athleta" class="tpLogo">
         </a>
-        <a href="admin.html">
+        <a href="../index.html">
             <div class="tpConta">
             <p>Voltar</p>
             <img src="../imagens/seta.png" alt="">     
@@ -23,21 +24,34 @@
         </a>
     </header>
 
-    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=- ADD-FORUM -=-=-=-=-=-=-=-=-=-=-=-=-=-  -->
+    <br><br>
 
-    <div id="addForum" class="addForum">
-        <form action="adicionar-forum">
-            <label for="nomeForum">
-                <input type="text" name="nomeForum" id="nomeForum" placeholder="Nome do Fórum: " required>
-            </label>
-            <br>
-            <label for="descricaoForum">
-                <input type="text" name="descricaoForum" id="descricaoForum" placeholder="Descrição: " required>
-            </label>
-            <br>
-            <input type="submit" value="Adicionar Forum" class="add-btn">
-        </form>
+    <div class="select-container">
+        <table class="select">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>nome</th>
+                    <th>email</th>
+                    <th>senha</th>
+                    <th>transferir</th>
+                    <th>id</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Cleitin</td>
+                    <td>cleitinReiDelas@.com.br</td>
+                    <td>********</td>
+                    <td>false</td>
+                    <td>69</td>
+                </tr>
+            </tbody>
+          </table>
     </div>
+
+    
 
     <style>
         body{
@@ -46,6 +60,6 @@
             align-items: center;
             justify-content: center;
         }
-    </style>
+    </style> 
 </body>
 </html>
