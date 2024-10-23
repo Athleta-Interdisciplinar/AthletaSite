@@ -24,34 +24,127 @@
         </a>
     </header>
 
-    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=- MENU -=-=-=-=-=-=-=-=-=-=-=-=-=-  -->
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=- ATT-ADMIN -=-=-=-=-=-=-=-=-=-=-=-=-=-  -->
 
-    <br><br>
-    <div class="funcoes" style="height: 400px;">
+    <div id="attAdmin" class="cont">
+        <h2>Atualizar Admin</h2>
         <br>
-        <h2>Funções:</h2>
+        <form action="Atualizar-admin" method="post">
+            <label for="idAdmin">
+                <input type="number" name="idAdmin" id="idAdmin" placeholder="ID para alteração: " min="0">
+            </label>
+            <br><br>
+            <label for="nomeAdmin">
+                <input type="text" name="nomeAdmin" id="nomeAdmin" placeholder="Nome: " required>
+            </label>
+            <br>
+            <label for="emailAdmin">
+                <input type="email" name="emailAdmin" id="emailAdmin" placeholder="Email: " required>
+            </label>
+            <br>
+            <label for="passwordAdmin">
+                <input type="password" name="passwordAdmin" id="passwordAdmin" placeholder="Senha: " required>
+            </label>
+            <br>
+            <label for="confirmPasswordAdmin">
+                <input type="password" name="confirmPasswordAdmin" id="confirmPasswordAdmin" placeholder="Confirmar senha: " required>
+            </label>
+            <br>
+            <input type="submit" value="Atualizar Admin" class="cont-btn">
+        </form>
+    </div>
+
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=- ATT-FORUM -=-=-=-=-=-=-=-=-=-=-=-=-=-  -->
+
+    <div id="attForum" class="cont">
+        <h2>Atualizar Fórum</h2>
         <br>
-        <a href="att-admin.html" class="adm-btn">
-            <div id="att-adm-btn">Admin</div>
-        </a>
+        <form action="Atualizar-forum" method="post">
+            <label for="idForum">
+                <input type="number" name="idForum" id="idAdmin" placeholder="ID para alteração: " min="0">
+            </label>
+            <br><br>
+            <label for="nomeForum">
+                <input type="text" name="nomeForum" id="nomeForum" placeholder="Nome do Fórum: " required>
+            </label>
+            <br>
+            <label for="descricaoForum">
+                <input type="text" name="descricaoForum" id="descricaoForum" placeholder="Descrição: " required>
+            </label>
+            <br>
+            <input type="submit" value="Atualizar Forum" class="cont-btn">
+        </form>
+    </div>
+
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=- ATT-CT -=-=-=-=-=-=-=-=-=-=-=-=-=-  -->
+
+    <div id="attCT" class="cont">
+        <h2>Atualizar Centros Esportivos</h2>
         <br>
-        <a href="att-filtro.html" class="adm-btn">
-            <div id="att-filtro-btn">Filtro</div>
-        </a>
+        <form action="Atualizar-ct" method="post">
+            <label for="idForum">
+                <input type="number" name="idCT" id="idAdmin" placeholder="ID para alteração: " min="0">
+            </label>
+            <br><br>
+            <label for="nomeCT">
+                <input type="text" name="nomeCT" id="nomeCT" placeholder="Nome: " required>
+            </label>
+            <br>
+            <label for="telefoneCT">
+                <input type="number" name="telefoneCT" id="telefoneCT" placeholder="Telefone: ">
+            </label>
+            <br>
+            <label for="descricaoCT">
+                <input type="text" name="descricaoCT" id="descricaoCT" placeholder="Descrição: " required>
+            </label>
+            <br>
+            <input type="submit" value="Atualizar Centros Esportivos" class="cont-btn">
+        </form>
+    </div>
+
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=- ATT-FILTRO -=-=-=-=-=-=-=-=-=-=-=-=-=-  -->
+
+    <div id="attFiltro" class="cont">
+        <h2>Atualizar Filtro</h2>
         <br>
-        <a href="att-forum.html" class="adm-btn">
-            <div id="att-forum-btn">Fórum</div>
-        </a>
+        <form action="Atualizar-filtro" method="post">
+            <label for="idFiltro">
+                <input type="number" name="idFiltro" id="idAdmin" placeholder="ID para alteração: " min="0">
+            </label>
+            <br><br>
+            <label for="categoriaFiltro">
+                <input type="text" name="categoriaFiltro" id="categoriaFiltro" placeholder="Categoria: " required>
+            </label>
+            <br>
+            <input type="submit" value="Atualizar Filtro" class="cont-btn">
+        </form>
+    </div>
+
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=- ATT-ESPORTE -=-=-=-=-=-=-=-=-=-=-=-=-  -->
+
+    <div id="attCT" class="cont">
+        <h2>Atualizar Esportes</h2>
         <br>
-        <a href="att-esportes.html" class="adm-btn">
-            <div id="att-esportes-btn">Esportes</div>
-        </a>
-        <br>
-        <a href="att-ct.html" class="adm-btn">
-            <div id="att-ct-btn">Centros Esportivos</div>
-        </a>
-        <br>
-    </div>  
+        <form action="Atualizar-esporte" method="post">
+            <label for="idEsporte">
+                <input type="number" name="idEsporte" id="idAdmin" placeholder="ID para alteração: " min="0">
+            </label>
+            <br><br>
+            <label for="nomeEsporte">
+                <input type="text" name="nomeEsporte" id="nomeEsporte" placeholder="Nome: " required>
+            </label>
+            <br>
+            <label for="descricaoEsporte">
+                <input type="text" name="descricaoEsporte" id="descricaoEsporte" placeholder="Descrição: " required>
+            </label>
+            <br>
+            <label for="praticarEsporte">
+                <input type="text" name="preaticarEsporte" id="praticarEsporte" placeholder="Como Praticar: " required>
+            </label>
+            <br>
+            <input type="submit" value="Atualizar Esporte" class="cont-btn">
+        </form>
+    </div>
 
 
     <style>
