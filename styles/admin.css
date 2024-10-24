@@ -130,6 +130,13 @@ input{
 
 th, td{
     background-color: white;
+    word-break: break-word; /* Faz com que palavras longas se dividam e continuem na próxima linha. */
+}
+
+.select-info{
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
 
 thead, tr, th, tbody, td{

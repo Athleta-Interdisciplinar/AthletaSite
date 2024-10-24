@@ -111,3 +111,17 @@ a{
 .back{
     margin-top: 20px;
 }
+
+@media screen and (max-width: 550px){
+    .titulo{
+        font-size: 80px;
+    }
+
+    .bem-vindo{
+        font-size: 30px;
+    }
+
+    input{
+        width: 230px;
+    }
+}
