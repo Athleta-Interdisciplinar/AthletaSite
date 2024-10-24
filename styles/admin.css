@@ -258,4 +258,8 @@ thead, tr, th, tbody, td{
         padding: 5px;
         height: auto;
     }
+
+    .aprEventos{
+        width: 85vw;
+    }
 }
